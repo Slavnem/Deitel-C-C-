@@ -19,29 +19,12 @@ class ImpSavingAccounts
             // boş gövde
         }
 
-        // aylık faiz hesaplama
-        int calculateMonthlyInterest()
-        {
-            return this->savingsBalance += (int)(savingsBalance * ((double)annualInterestRate / 12));
-        }
-
-        // aylık faiz değeri ayarlama
-        static int modifyInterestRate(int);
+        int calculateMonthlyInterest();
+        static void modifyInterestRate(int);
 
     private:
         int savingsBalance;
         static int annualInterestRate;
 };
-
-// başlangıç faiz değeri
-int ImpSavingAccounts::annualInterestRate = 3;
-
-int ImpSavingAccounts::modifyInterestRate(int value)
-{
-    if(value > 0)
-        return annualInterestRate = value;
-
-    throw invalid_argument("* Geçersiz Faiz Değeri *");
-}
 
 #endif

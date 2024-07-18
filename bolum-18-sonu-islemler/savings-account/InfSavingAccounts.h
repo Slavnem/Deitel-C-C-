@@ -12,7 +12,7 @@ class InfSavingAccounts
         InfSavingAccounts(int);
         ~InfSavingAccounts();
         int calculateMonthlyInterest();
-        static int modifyInterestRate(int);
+        static void modifyInterestRate(int);
 
     private:
         ImpSavingAccounts *impPtr;
