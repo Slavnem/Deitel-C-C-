@@ -27,5 +27,5 @@ int InfSavingAccounts::calculateMonthlyInterest()
 // faiz oranı ayarlama
 void InfSavingAccounts::modifyInterestRate(int value)
 {
-    return ImpSavingAccounts::modifyInterestRate(value);
+    ImpSavingAccounts::modifyInterestRate(value);
 }
