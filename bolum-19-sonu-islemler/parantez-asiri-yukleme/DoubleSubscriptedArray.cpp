@@ -52,8 +52,8 @@ DoubleSubscriptedArray::~DoubleSubscriptedArray()
 int &DoubleSubscriptedArray::operator()(const int rw, const int cl)
 {
     // kontrol sağlasın
-    if(rw > row) throw invalid_argument("Erişmek İstediğiniz Satır Değeri Geçersiz");
-    if(cl > col) throw invalid_argument("Erişmek İstediğiniz Sütun Değeri Geçersiz");
+    if(rw < 1 || rw > row) throw invalid_argument("Erişmek İstediğiniz Satır Değeri Geçersiz");
+    if(cl < 1 || cl > col) throw invalid_argument("Erişmek İstediğiniz Sütun Değeri Geçersiz");
 
     // erişitiği adresi döndürsün
     return ptr[((rw - 1) * col) + (cl - 1)];
@@ -63,8 +63,8 @@ int &DoubleSubscriptedArray::operator()(const int rw, const int cl)
 int &DoubleSubscriptedArray::operator()(const int rw, const int cl) const
 {
     // kontrol sağlasın
-    if(rw > row) throw invalid_argument("Erişmek İstediğiniz Satır Değeri Geçersiz");
-    if(cl > col) throw invalid_argument("Erişmek İstediğiniz Sütun Değeri Geçersiz");
+    if(rw < 1 || rw > row) throw invalid_argument("Erişmek İstediğiniz Satır Değeri Geçersiz");
+    if(cl < 1 || cl > col) throw invalid_argument("Erişmek İstediğiniz Sütun Değeri Geçersiz");
 
     // erişitiği adresi döndürsün
     return ptr[((rw - 1) * col) + (cl - 1)];
