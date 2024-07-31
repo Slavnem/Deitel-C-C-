@@ -25,5 +25,5 @@ When i notice errors or warnings, i fix and i post them again.
 I compile with a Bash terminal.
 
 ## Derleme (Compile)
-`g++ main.cpp -o compiled/main`
+`g++ *.cpp -o compiled/main`
 `./compiled/main`
