@@ -14,8 +14,9 @@ I share the answers to the questions I solved.
 Comment to make it as clear as possible
 I try to explain in detail in the following lines.
 
-## İşletim Sistemi (OS)
-### Linux/GNU (Debian) - G++
+## İşletim Sistemi/Derleyici (OS/Compiler)
+### Linux/GNU (Debian)/g++
+### FreeBSD/g++
 TR: G++ ile hatasız ve uyarısız derledikten sonra paylaşıyorum.
 Hata veya uyarı fark ettiğimde düzelttikten sonra tekrar paylaşıyorum.
 Bash terminali ile derliyorum.
@@ -25,5 +26,5 @@ When i notice errors or warnings, i fix and i post them again.
 I compile with a Bash terminal.
 
 ## Derleme (Compile)
-`g++ *.cpp -o compiled/main`
-`./compiled/main`
+`Linux/GNU: g++ *.cpp -o build/main.linux -> ./build/main.linux`
+`FreeBSD: g++ *.cpp -o build/main.bsd -> ./build/main.bsd`
