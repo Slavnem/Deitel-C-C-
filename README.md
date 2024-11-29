@@ -26,5 +26,5 @@ When i notice errors or warnings, i fix and i post them again.
 I compile with a Bash terminal.
 
 ## Derleme (Compile)
-`Linux/GNU: g++ *.cpp -o build/main.linux -> ./build/main.linux`
+`Linux/GNU: g++ *.cpp -o build/main.linux -> ./build/main.linux`<br/>
 `FreeBSD: g++ *.cpp -o build/main.bsd -> ./build/main.bsd`
